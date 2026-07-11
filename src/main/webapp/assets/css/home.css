@@ -1,0 +1,327 @@
+/* =====================================================
+                    HERO SECTION
+===================================================== */
+
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#4f8ef7);
+    color:white;
+    padding:90px 0;
+}
+
+.hero-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:52px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+    opacity:.95;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+}
+
+
+/* =====================================================
+                  CATEGORY SECTION
+===================================================== */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.category-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+.category-card img{
+    height:230px;
+    width:100%;
+    object-fit:cover;
+}
+
+.category-card h3{
+    padding:18px;
+    color:#222;
+}
+
+
+/* =====================================================
+                 PRODUCT SECTION
+===================================================== */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.product-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:18px;
+}
+
+.product-info h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.product-brand{
+    color:#777;
+    font-size:14px;
+}
+
+.product-price{
+    font-size:22px;
+    font-weight:600;
+    color:#0d6efd;
+    margin:15px 0;
+}
+
+.product-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.product-buttons .btn{
+    flex:1;
+}
+
+
+/* =====================================================
+                FEATURES SECTION
+===================================================== */
+
+.features{
+    background:#ffffff;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:#f8f9fa;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+.feature-card h3{
+    margin-bottom:12px;
+}
+
+
+/* =====================================================
+              NEWSLETTER SECTION
+===================================================== */
+
+.newsletter{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.newsletter h2{
+    margin-bottom:15px;
+    font-size:36px;
+}
+
+.newsletter p{
+    margin-bottom:25px;
+}
+
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.newsletter input{
+    width:400px;
+    max-width:100%;
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+}
+
+.newsletter button{
+    padding:14px 28px;
+}
+
+
+/* =====================================================
+               RESPONSIVE - LAPTOP
+===================================================== */
+
+@media(max-width:992px){
+
+.hero-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.category-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.product-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.features-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* =====================================================
+               RESPONSIVE - TABLET
+===================================================== */
+
+@media(max-width:768px){
+
+.hero{
+    padding:70px 0;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.category-grid{
+    grid-template-columns:1fr;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.features-grid{
+    grid-template-columns:1fr;
+}
+
+.product-buttons{
+    flex-direction:column;
+}
+
+.newsletter h2{
+    font-size:30px;
+}
+
+}
+
+
+/* =====================================================
+               RESPONSIVE - MOBILE
+===================================================== */
+
+@media(max-width:576px){
+
+.hero-content h1{
+    font-size:32px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.hero-buttons .btn{
+    width:100%;
+}
+
+.category-card img{
+    height:200px;
+}
+
+.product-card img{
+    height:220px;
+}
+
+.newsletter{
+    padding:50px 15px;
+}
+
+.newsletter input{
+    width:100%;
+}
+
+.newsletter button{
+    width:100%;
+}
+
+}
